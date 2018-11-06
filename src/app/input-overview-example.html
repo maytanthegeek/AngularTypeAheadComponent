@@ -1,0 +1,6 @@
+<div>
+	<mat-form-field class="formula-gen">
+		<mat-label *ngIf="formulaArea.value.length === 0">Enter your formula here.</mat-label>
+		<textarea #formulaArea matInput readonly (keyup)="keyMap($event)"></textarea>
+	</mat-form-field>
+</div>
